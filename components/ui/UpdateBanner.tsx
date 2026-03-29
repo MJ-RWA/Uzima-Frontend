@@ -22,8 +22,8 @@ export function UpdateBanner() {
     localStorage.setItem('uzima-update-dismissed', 'true');
   };
 
- const isVisible = true;
-  // const isVisible = updateAvailable && !dismissed;
+ 
+  const isVisible = updateAvailable && !dismissed;
 
   useEffect(() => {
     const updateCssVar = () => {
